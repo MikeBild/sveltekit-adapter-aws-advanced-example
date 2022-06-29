@@ -20,7 +20,7 @@
 				<a sveltekit:prefetch href="/about">About</a>
 			</li>
 			<li class:active={$page.url.pathname === '/data'}>
-				<a href="/data">DynamoDB</a>
+				<a sveltekit:prefetch href="/data">DynamoDB</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">

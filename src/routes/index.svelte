@@ -1,4 +1,6 @@
 <script context="module" lang="ts">
+	export const hydrate = true;
+	export const router = false;
 	export const prerender = true;
 </script>
 

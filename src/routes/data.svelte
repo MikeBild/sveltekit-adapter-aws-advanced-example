@@ -1,5 +1,7 @@
-<script context="module" lang="ts">
+<script context="module" lang="ts">	
 	export const hydrate = false;
+	export const router = false;
+	export const prerender = false;
 
 	import AWS from 'aws-sdk';
 
