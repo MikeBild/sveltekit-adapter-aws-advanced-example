@@ -1,21 +1,3 @@
-<script context="module" lang="ts">	
-	export const hydrate = false;
-	export const router = false;
-	export const prerender = false;
-
-	import AWS from 'aws-sdk';
-
-	export async function load() {
-		const ddb = new AWS.DynamoDB({ region: import.meta.env.VITE_AWS_REGION });
-		const result = await ddb.scan({ TableName: import.meta.env.VITE_DBTABLE }).promise();
-
-		return {
-			status: 200,
-			props: { items: result.Items?.map(({ id, type }) => ({ id: id.S, type: type.S })) }
-		};
-	}
-</script>
-
 <script lang="ts">
 	interface Item {
 		id: string;
