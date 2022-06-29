@@ -10,10 +10,8 @@ export default {
 		}),
 		vite: {
 			define: {
-				global: {},				
-				VITE_AWS_SECRET_ACCESS_KEY: process.env.AWS_SECRET_ACCESS_KEY	
-			},
-
+				global: {}
+			}
 		}
 	}
 };
