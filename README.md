@@ -7,23 +7,10 @@ Demonstrates a advanced deployed sample webapp on AWS https://sveltekit-adapter-
 ```
 git clone git@github.com:MikeBild/sveltekit-adapter-aws-advanced-example.git
 cd sveltekit-adapter-aws-advanced-example
-yarn add aws-cdk sveltekit-adapter-aws
-yarn && yarn build
+yarn
 ```
-3. Setup and deploy to AWS
-**svelte.config.js**
-```typescript
-import { adapter } from 'sveltekit-adapter-aws';
-import preprocess from 'svelte-preprocess';
+3. Build and deploy to AWS
+```
+yarn build
+```
 
-export default {
-	preprocess: preprocess(),
-	kit: {
-		adapter: adapter({
-			autoDeploy: true,
-			FQDN: 'sveltekit-adapter-aws-advanced-demo.example.com',
-			stackName: 'sveltekit-adapter-aws-advanced-demo'
-		})
-	}
-};
-```
