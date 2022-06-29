@@ -9,7 +9,12 @@ git clone git@github.com:MikeBild/sveltekit-adapter-aws-advanced-example.git
 cd sveltekit-adapter-aws-advanced-example
 yarn
 ```
-3. Build and deploy to AWS
+4. Create a `.env` file for local development
+```
+VITE_AWS_REGION=us-east-1
+VITE_DBTABLE=<your-generated-table-name>
+```
+5. Build and deploy to AWS
 ```
 yarn build
 ```
