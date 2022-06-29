@@ -19,7 +19,7 @@
 		id: string;
 		type: string;
 	}
-	export let items: Item[];
+	export let items: Item[] = [];
 </script>
 
 <svelte:head>
@@ -44,3 +44,11 @@
 		<table />
 	</table>
 </div>
+
+<style>
+	.content {
+		width: 100%;
+		max-width: var(--column-width);
+		margin: var(--column-margin-top) auto 0 auto;
+	}
+</style>
