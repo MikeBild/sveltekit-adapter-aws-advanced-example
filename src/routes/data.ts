@@ -5,6 +5,10 @@ export async function get() {
 	const result = await ddb.scan({ TableName: import.meta.env.VITE_DBTABLE }).promise();
 
 	return {
-		body: { items: result.Items?.map(({ id, type }) => ({ id: id.S, type: type.S })) }
+		body: {
+			items: result.Items?.map(({ id, type }: any) => ({ id: id.S, type: type.S })).sort(
+				(a: any, b: any) => a.id - b.id
+			)
+		}
 	};
 }
