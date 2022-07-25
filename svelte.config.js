@@ -7,11 +7,6 @@ export default {
 		adapter: adapter({
 			autoDeploy: true,
 			cdkProjectPath: `${process.cwd()}/deploy.js`
-		}),
-		vite: {
-			define: {
-				global: {}
-			}
-		}
+		})
 	}
 };
