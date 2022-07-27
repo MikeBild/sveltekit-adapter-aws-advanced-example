@@ -10,6 +10,7 @@ const { serverHandler } = new AWSAdapterStack(app, 'sveltekit-adapter-aws-advanc
 	FQDN: 'sveltekit-adapter-aws-advanced-demo.mikebild.com'
 });
 
-new IntrastructureStack(app, 'sveltekit-adapter-aws-advanced-infrastructure', {
+const { table } = new IntrastructureStack(app, 'sveltekit-adapter-aws-advanced-infrastructure', {
 	serverHandler
 });
+

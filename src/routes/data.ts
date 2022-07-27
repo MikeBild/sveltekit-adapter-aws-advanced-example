@@ -1,7 +1,7 @@
 import AWS from 'aws-sdk';
-const ddb = new AWS.DynamoDB();
 
 export async function GET() {
+	const ddb = new AWS.DynamoDB({ region: import.meta.env.VITE_AWS_REGION });
 	const result = await ddb.scan({ TableName: import.meta.env.VITE_DBTABLE }).promise();
 
 	return {

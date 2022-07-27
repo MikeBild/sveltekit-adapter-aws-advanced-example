@@ -1,4 +1,4 @@
-import { Stack } from '@aws-cdk/core';
+import { RemovalPolicy, Stack } from '@aws-cdk/core';
 import { Table, BillingMode, AttributeType, StreamViewType } from '@aws-cdk/aws-dynamodb';
 
 export class IntrastructureStack extends Stack {
@@ -18,7 +18,8 @@ export class IntrastructureStack extends Stack {
 				type: AttributeType.STRING
 			},
 			stream: StreamViewType.NEW_AND_OLD_IMAGES,
-			timeToLiveAttribute: 'expiresAt'
+			timeToLiveAttribute: 'expiresAt',
+			removalPolicy: RemovalPolicy.DESTROY
 		});
 
 		props.serverHandler.addEnvironment('VITE_DBTABLE', this.table.tableName);

@@ -7,6 +7,11 @@ export default {
 		adapter: adapter({
 			autoDeploy: true,
 			cdkProjectPath: `${process.cwd()}/deploy.js`
-		})
+		}),
+		prerender: {
+			enabled: true,
+			default: true,
+			crawl: true
+		}
 	}
 };
