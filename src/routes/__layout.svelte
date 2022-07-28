@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<link rel="manifest" href="/manifest.json" />
+	<link rel="manifest" href="/manifest.webmanifest" />
 	<link rel="apple-touch-icon" href="/pwa-logo-512.png" />
 	<meta name="SvelteKit Adapter AWS Advanced Demo" content="The all new SvelteKit Adapter AWS Advanced Demo PWA" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />

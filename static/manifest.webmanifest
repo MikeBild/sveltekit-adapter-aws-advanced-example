@@ -1,0 +1,30 @@
+{
+	"short_name": "SK AWS",
+	"name": "SvelteKit AWS Demo",
+	"start_url": "/",
+    "scope": "/",
+	"icons": [
+        {
+			"src": "pwa-logo-512.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any"
+		},
+		{
+			"src": "pwa-logo-512.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "maskable"
+		},
+		{
+			"src": "pwa-logo-192.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "maskable"
+		}
+	],
+	"background_color": "#bee0da",
+	"display": "standalone",
+	"theme_color": "#bee0da",
+	"description": "SvelteKit AWS Adapter Demo App"
+}
