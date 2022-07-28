@@ -1,5 +1,5 @@
 import { RemovalPolicy, Stack } from '@aws-cdk/core';
-import { Table, BillingMode, AttributeType, StreamViewType } from '@aws-cdk/aws-dynamodb';
+import { Table, BillingMode, AttributeType, StreamViewType, TableClass } from '@aws-cdk/aws-dynamodb';
 
 export class IntrastructureStack extends Stack {
 	table;

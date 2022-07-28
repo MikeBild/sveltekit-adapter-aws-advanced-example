@@ -3,6 +3,15 @@
 	import '../app.css';
 </script>
 
+<svelte:head>
+	<link rel="manifest" href="/manifest.json" />
+	<link rel="apple-touch-icon" href="/pwa-logo-512.png" />
+	<meta name="SvelteKit Adapter AWS Advanced Demo" content="The all new SvelteKit Adapter AWS Advanced Demo PWA" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="msapplication-TileColor" content="#00aba9" />
+	<meta name="theme-color" content="#bee0da" />
+</svelte:head>	
+
 <Header />
 
 <main>
