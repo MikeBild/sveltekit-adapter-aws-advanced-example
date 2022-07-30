@@ -2,5 +2,9 @@
   "sveltekit-adapter-aws-advanced-infrastructure": {
     "ExportsOutputRefDynamoDBTable59784FC027915268": "sveltekit-adapter-aws-advanced-infrastructure-DynamoDBTable59784FC0-NXIFT7AUZN8U",
     "ExportsOutputFnGetAttDynamoDBTable59784FC0ArnFDE6BED0": "arn:aws:dynamodb:eu-central-1:044086961882:table/sveltekit-adapter-aws-advanced-infrastructure-DynamoDBTable59784FC0-NXIFT7AUZN8U"
+  },
+  "sveltekit-adapter-aws-advanced-app": {
+    "apiUrl": "w2eqoj9kn5.execute-api.eu-central-1.amazonaws.com",
+    "appUrl": "sveltekit-adapter-aws-advanced-demo.mikebild.com"
   }
 }
