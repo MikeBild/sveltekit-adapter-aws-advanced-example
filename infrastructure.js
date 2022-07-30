@@ -1,5 +1,9 @@
-import { RemovalPolicy, Stack } from '@aws-cdk/core';
-import { Table, BillingMode, AttributeType, StreamViewType, TableClass } from '@aws-cdk/aws-dynamodb';
+import { RemovalPolicy, Stack, CfnOutput } from '@aws-cdk/core';
+import {
+	Table,
+	BillingMode,
+	AttributeType,
+	StreamViewType} from '@aws-cdk/aws-dynamodb';
 
 export class IntrastructureStack extends Stack {
 	table;
@@ -24,5 +28,7 @@ export class IntrastructureStack extends Stack {
 
 		props.serverHandler.addEnvironment('VITE_DBTABLE', this.table.tableName);
 		this.table.grantReadWriteData(props.serverHandler);
+
+		new CfnOutput(this, 'tableName', { value: this.table.tableName });
 	}
 }
