@@ -1,9 +1,5 @@
 <script lang="ts">
-	interface Item {
-		id: string;
-		type: string;
-	}
-	export let items: Item[] = [];
+	export let data = { items: [] };
 </script>
 
 <svelte:head>
@@ -18,7 +14,7 @@
 			<tr><td>ID</td><td>Type</td></tr>
 		</thead>
 		<tbody>
-			{#each items as { id, type }}
+			{#each data.items as { id, type }}
 				<tr>
 					<td>{id}</td>
 					<td>{type}</td>

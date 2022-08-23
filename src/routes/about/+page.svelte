@@ -1,8 +1,3 @@
-<script context="module" lang="ts">	
-	export const hydrate = false;	
-	export const prerender = true;
-</script>
-
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="About this app" />
