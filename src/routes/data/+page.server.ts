@@ -1,8 +1,8 @@
 import AWS from 'aws-sdk';
-import { TABLENAME, REGION } from '$env/static/private';
+import { TABLENAME, AWS_REGION } from '$env/static/private';
 
 export async function load() {
-	const ddb = new AWS.DynamoDB({ region: REGION });
+	const ddb = new AWS.DynamoDB({ region: AWS_REGION! });
 	const result = await ddb.scan({ TableName: TABLENAME! }).promise();
 
 	return {
