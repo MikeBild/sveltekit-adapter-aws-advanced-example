@@ -11,8 +11,8 @@ yarn
 ```
 4. Create a `.env` file for local development
 ```
-VITE_AWS_REGION=us-east-1
-VITE_DBTABLE=<your-generated-table-name>
+FQDN=<your generated table name>
+AWS_REGION=<your AWS region>
 ```
 5. Build and deploy to AWS
 ```
