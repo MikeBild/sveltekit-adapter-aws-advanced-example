@@ -11,7 +11,6 @@ export default {
 			cdkProjectPath: join(process.cwd(), './infrastructure/deploy.js')
 		}),
 		prerender: {
-			default: false,
 			crawl: false
 		}
 	}
